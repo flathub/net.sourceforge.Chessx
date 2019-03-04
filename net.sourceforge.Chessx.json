@@ -32,6 +32,10 @@
                     "strip-components": 2
                 },
                 {
+                    "type": "patch",
+                    "path": "chessx-qt-511.patch"
+                },
+                {
                     "type": "file",
                     "path": "net.sourceforge.Chessx.appdata.xml"
                 }
