@@ -24,6 +24,7 @@ browse, edit, add, organize, analyze, etc.
 		</ul>
 	</description>
 	<releases>
+    	<release version="1.5.0" date="2019-05-05"/>
     	<release version="1.4.6" date="2017-04-14"/>
   	</releases>
 	<screenshots>
