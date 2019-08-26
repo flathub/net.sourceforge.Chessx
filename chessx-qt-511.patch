@@ -26,8 +26,8 @@ index 95b7f88..27df8de 100644
 +++ b/src/dialogs/savedialog.cpp
 @@ -24,6 +24,7 @@
  
- #include <QLineEdit>
  #include <QCompleter>
+ #include <QLineEdit>
 +#include <QButtonGroup>
  
  #if defined(_MSC_VER) && defined(_DEBUG)
