@@ -24,6 +24,7 @@ browse, edit, add, organize, analyze, etc.
 		</ul>
 	</description>
 	<releases>
+	<release version="1.5.4" date="2020-05-12"/>
     	<release version="1.5.0" date="2019-05-05"/>
     	<release version="1.4.6" date="2017-04-14"/>
   	</releases>
@@ -32,7 +33,7 @@ browse, edit, add, organize, analyze, etc.
 			<image>http://i1-win.softpedia-static.com/screenshots/ChessX_1.png</image>
 		</screenshot>
 	</screenshots>
-	<url type="homepage">http://chessx.sourceforge.net/</url>
+	<url type="homepage">https://chessx.sourceforge.io</url>
 	<content_rating type="oars-1.1">
 		<content_attribute id="violence-cartoon">none</content_attribute>
 		<content_attribute id="violence-fantasy">none</content_attribute>
