@@ -10,7 +10,6 @@
         "--socket=x11",
         "--share=ipc",
         "--socket=pulseaudio",
-        "--socket=wayland",
         "--share=network",
         "--device=dri"
     ],
