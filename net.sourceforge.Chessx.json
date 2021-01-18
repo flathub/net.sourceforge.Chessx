@@ -2,7 +2,7 @@
     "app-id": "net.sourceforge.Chessx",
     "branch": "stable",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.12",
+    "runtime-version": "5.15",
     "sdk": "org.kde.Sdk",
     "rename-icon": "chessx",
     "command": "chessx",
@@ -10,7 +10,6 @@
         "--socket=x11",
         "--share=ipc",
         "--socket=pulseaudio",
-        "--socket=wayland",
         "--share=network",
         "--device=dri"
     ],
@@ -27,8 +26,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/chessx/chessx/1.5.0/chessx-1.5.0.tgz",
-                    "sha256": "d130ad3220821da9ea19e7228222a5528fabca3ca06bc41b4d7f702454f63827",
+                    "url": "https://downloads.sourceforge.net/project/chessx/chessx/1.5.4/chessx-1.5.4.tgz",
+                    "sha256": "e2dbacff2a6c055cfbe4ce0344331f77262867e228a5fe2895e6c242772065a8",
                     "strip-components": 2
                 },
                 {
@@ -38,6 +37,10 @@
                 {
                     "type": "file",
                     "path": "net.sourceforge.Chessx.appdata.xml"
+                },
+                {
+                    "type": "shell",
+                    "commands": [ "sed -i -r '/chessx_(da|fr|it|cz|ru)/d' resources.qrc" ]
                 }
             ],
             "post-install": [
