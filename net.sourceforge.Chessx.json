@@ -26,8 +26,9 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/chessx/chessx/1.5.4/chessx-1.5.4.tgz",
-                    "sha256": "e2dbacff2a6c055cfbe4ce0344331f77262867e228a5fe2895e6c242772065a8",
+                    "dest-filename": "chessx.tgz",
+                    "url": "https://sourceforge.net/projects/chessx/files/chessx/1.5.6/chessx-1.5.6.tgz/download",
+                    "sha256": "d09a4b534a909c5f1a398c64065049a2fdf30497bc81ccbdf0d940412364d205",
                     "strip-components": 2,
                     "x-checker-data": {
                         "type": "json",
@@ -37,16 +38,8 @@
                     }
                 },
                 {
-                    "type": "patch",
-                    "path": "chessx-qt-511.patch"
-                },
-                {
                     "type": "file",
                     "path": "net.sourceforge.Chessx.appdata.xml"
-                },
-                {
-                    "type": "shell",
-                    "commands": [ "sed -i -r '/chessx_(da|fr|it|cz|ru)/d' resources.qrc" ]
                 }
             ],
             "post-install": [
