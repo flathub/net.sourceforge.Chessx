@@ -28,7 +28,13 @@
                     "type": "archive",
                     "url": "https://downloads.sourceforge.net/project/chessx/chessx/1.5.4/chessx-1.5.4.tgz",
                     "sha256": "e2dbacff2a6c055cfbe4ce0344331f77262867e228a5fe2895e6c242772065a8",
-                    "strip-components": 2
+                    "strip-components": 2,
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://sourceforge.net/projects/chessx/best_release.json",
+                        "version-query": ".release.filename | match(\"/([\\\\d\\\\-.]+)/\").captures[0].string",
+                        "url-query": ".release.url"
+                    }
                 },
                 {
                     "type": "patch",
