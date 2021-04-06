@@ -21,7 +21,7 @@ modules:
       - CONFIG+=release
     sources:
       - type: archive
-        dest-filename: chessx.tgz
+        archive-type: tar
         url: https://sourceforge.net/projects/chessx/files/chessx/1.5.6/chessx-1.5.6.tgz/download
         sha256: d09a4b534a909c5f1a398c64065049a2fdf30497bc81ccbdf0d940412364d205
         strip-components: 2
