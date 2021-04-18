@@ -22,8 +22,8 @@ modules:
     sources:
       - type: archive
         archive-type: tar
-        url: https://sourceforge.net/projects/chessx/files/chessx/1.5.6/chessx-1.5.6.tgz/download
-        sha256: d09a4b534a909c5f1a398c64065049a2fdf30497bc81ccbdf0d940412364d205
+        url: https://sourceforge.net/projects/chessx/files/chessx/1.5.6/setup-chessx7-64.exe/download
+        sha256: 22e8adc9e04ef13515a443c0ff46a2f5ff56937b53a724b355a6ec688d1b1d7e
         strip-components: 2
         x-checker-data:
           type: json
