@@ -64,4 +64,5 @@ browse, edit, add, organize, analyze, etc.
 		<content_attribute id="money-purchasing">none</content_attribute>
 		<content_attribute id="money-gambling">none</content_attribute>
   	</content_rating>
+	<developer_name>ChessX</developer_name>
 </component>
