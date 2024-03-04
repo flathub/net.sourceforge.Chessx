@@ -4,6 +4,7 @@
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license> GPL-2.0-only</project_license>
 	<name>ChessX</name>
+	<launchable type="desktop-id">net.sourceforge.Chessx.desktop</launchable>
 	<summary>Free Chess Database</summary>
 	<description>
 		<p>
@@ -64,4 +65,5 @@ browse, edit, add, organize, analyze, etc.
 		<content_attribute id="money-purchasing">none</content_attribute>
 		<content_attribute id="money-gambling">none</content_attribute>
   	</content_rating>
+	<developer_name>ChessX</developer_name>
 </component>
