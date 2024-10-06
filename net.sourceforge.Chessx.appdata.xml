@@ -4,6 +4,7 @@
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license> GPL-2.0-only</project_license>
 	<name>ChessX</name>
+	<launchable type="desktop-id">net.sourceforge.Chessx.desktop</launchable>
 	<summary>Free Chess Database</summary>
 	<description>
 		<p>
@@ -24,16 +25,20 @@ browse, edit, add, organize, analyze, etc.
 		</ul>
 	</description>
 	<releases>
-	<release version="1.5.6" date="2021-02-27"/>
-	<release version="1.5.4" date="2020-05-12"/>
-    	<release version="1.5.0" date="2019-05-05"/>
-    	<release version="1.4.6" date="2017-04-14"/>
+	        <release version="1.6.2" date="2024-09-06"/>
+		<release version="1.5.6" date="2021-02-27"/>
+		<release version="1.5.4" date="2020-05-12"/>
+    		<release version="1.5.0" date="2019-05-05"/>
   	</releases>
 	<screenshots>
 		<screenshot type="default">
 			<image>https://windows-cdn.softpedia.com/screenshots/ChessX_1.png</image>
 		</screenshot>
 	</screenshots>
+        <categories>
+     		<category>Game</category>
+                <category>StrategyGame</category>
+        </categories>
 	<url type="homepage">https://chessx.sourceforge.io</url>
 	<content_rating type="oars-1.1">
 		<content_attribute id="violence-cartoon">none</content_attribute>
@@ -64,4 +69,5 @@ browse, edit, add, organize, analyze, etc.
 		<content_attribute id="money-purchasing">none</content_attribute>
 		<content_attribute id="money-gambling">none</content_attribute>
   	</content_rating>
+	<developer_name>ChessX</developer_name>
 </component>
