@@ -30,6 +30,11 @@ modules:
         archive-type: tar
         url: https://sourceforge.net/projects/chessx/files/chessx/1.6.2/chessx-1.6.2.tgz
         sha256: bb091d849cb02d6309978fe284c9f1a85c274f35122fe91c6b9c3089a6e20f80
+        x-checker-data:
+          type: json
+          url: https://sourceforge.net/projects/chessx/best_release.json
+          version-query: .release.filename | match("/([\\d\\-.]+)/").captures[0].string
+          url-query: .release.url
       - type: patch
         paths:
           - patches/0001-Work-around-Qt-Wayland-integration-issue.patch
