@@ -28,13 +28,11 @@ modules:
     sources:
       - type: archive
         archive-type: tar
-        url: https://sourceforge.net/projects/chessx/files/chessx/1.5.6/chessx-1.5.6.tgz/download
-        sha256: d09a4b534a909c5f1a398c64065049a2fdf30497bc81ccbdf0d940412364d205
-        strip-components: 2
-        x-checker-data:
-          type: json
-          url: https://sourceforge.net/projects/chessx/best_release.json
-          version-query: .release.filename | match("/([\\d\\-.]+)/").captures[0].string
-          url-query: .release.url
+        url: https://sourceforge.net/projects/chessx/files/chessx/1.6.2/chessx-1.6.2.tgz
+        sha256: bb091d849cb02d6309978fe284c9f1a85c274f35122fe91c6b9c3089a6e20f80
+      - type: patch
+        paths:
+          - patches/0001-Work-around-Qt-Wayland-integration-issue.patch
+          - patches/0003-Allow-linking-against-system-libraries-via-pkg-confi.patch
       - type: file
         path: net.sourceforge.Chessx.metainfo.xml
