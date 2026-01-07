@@ -1,5 +1,4 @@
-app-id: net.sourceforge.Chessx
-branch: stable
+id: net.sourceforge.Chessx
 runtime: org.kde.Platform
 runtime-version: '5.15-25.08'
 sdk: org.kde.Sdk
