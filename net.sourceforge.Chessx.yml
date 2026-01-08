@@ -1,6 +1,6 @@
 id: net.sourceforge.Chessx
 runtime: org.kde.Platform
-runtime-version: '5.15-25.08'
+runtime-version: 5.15-25.08
 sdk: org.kde.Sdk
 rename-icon: chessx
 command: chessx
@@ -27,13 +27,14 @@ modules:
       - install -Dm755 net.sourceforge.Chessx.metainfo.xml /app/share/metainfo/net.sourceforge.Chessx.metainfo.xml
     sources:
       - type: archive
-        url: https://sourceforge.net/projects/chessx/files/chessx/1.6.2/chessx-1.6.2.tgz
+        url: https://downloads.sourceforge.net/project/chessx/chessx/1.6.2/chessx-1.6.2.tgz
         sha256: bb091d849cb02d6309978fe284c9f1a85c274f35122fe91c6b9c3089a6e20f80
         x-checker-data:
           type: json
           url: https://sourceforge.net/projects/chessx/best_release.json
-          version-query: .release.filename | match("/([\\d\\-.]+)/").captures[0].string
-          url-query: .release.url
+          version-query: .platform_releases.linux.filename | split("/") | .[2]
+          # Use Linux-specific URL | Replace http with https | Trim timestamp
+          url-query: .platform_releases.linux.url | sub("^http://"; "https://") | sub("\\?ts=.*$"; "")
       - type: patch
         path: allow-linking-against-system-libraries.patch
       - type: file
