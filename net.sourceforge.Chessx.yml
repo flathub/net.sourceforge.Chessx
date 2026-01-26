@@ -27,14 +27,15 @@ modules:
       - install -Dm755 net.sourceforge.Chessx.metainfo.xml /app/share/metainfo/net.sourceforge.Chessx.metainfo.xml
     sources:
       - type: archive
-        url: https://downloads.sourceforge.net/project/chessx/chessx/1.6.2/chessx-1.6.2.tgz
-        sha256: bb091d849cb02d6309978fe284c9f1a85c274f35122fe91c6b9c3089a6e20f80
+        url: https://downloads.sourceforge.net/project/chessx/chessx/1.6.6/chessx-1.6.6.tgz
+        sha256: 3562b62e75038bd7b6df9f2196da43ec7ff0f0f32046a42f93d446cce804a2ea
         x-checker-data:
           type: json
           url: https://sourceforge.net/projects/chessx/best_release.json
           version-query: .platform_releases.linux.filename | split("/") | .[2]
           # Use Linux-specific URL | Replace http with https | Trim timestamp
-          url-query: .platform_releases.linux.url | sub("^http://"; "https://") | sub("\\?ts=.*$"; "")
+          url-query: .platform_releases.linux.url | sub("^http://"; "https://") |
+            sub("\\?ts=.*$"; "")
       - type: patch
         path: allow-linking-against-system-libraries.patch
       - type: file
