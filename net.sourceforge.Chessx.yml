@@ -36,7 +36,5 @@ modules:
           # Use Linux-specific URL | Replace http with https | Trim timestamp
           url-query: .platform_releases.linux.url | sub("^http://"; "https://") |
             sub("\\?ts=.*$"; "")
-      - type: patch
-        path: allow-linking-against-system-libraries.patch
       - type: file
         path: net.sourceforge.Chessx.metainfo.xml
