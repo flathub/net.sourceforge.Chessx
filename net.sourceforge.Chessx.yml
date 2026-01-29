@@ -27,8 +27,8 @@ modules:
       - install -Dm755 net.sourceforge.Chessx.metainfo.xml /app/share/metainfo/net.sourceforge.Chessx.metainfo.xml
     sources:
       - type: archive
-        url: https://downloads.sourceforge.net/project/chessx/chessx/1.6.6/chessx-1.6.6.tgz
-        sha256: 3562b62e75038bd7b6df9f2196da43ec7ff0f0f32046a42f93d446cce804a2ea
+        url: https://downloads.sourceforge.net/project/chessx/chessx/1.6.8/chessx-1.6.8.tgz
+        sha256: 14e498bbe0e5cbc12efa38920c6b978c79110e6a216a1708cac678788292df67
         x-checker-data:
           type: json
           url: https://sourceforge.net/projects/chessx/best_release.json
